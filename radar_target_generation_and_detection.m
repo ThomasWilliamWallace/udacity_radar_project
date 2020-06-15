@@ -179,16 +179,16 @@ size_y = size(RDM, 2);
 
 % *%TODO* :
 %Select the number of Training Cells in both the dimensions.
-T = 6; % number_of_training_cells
+T = 3; % number_of_training_cells
 
 % *%TODO* :
 %Select the number of Guard Cells in both dimensions around the Cell under 
 %test (CUT) for accurate estimation
-G = 2; % number_of_guard_cells
+G = 4; % number_of_guard_cells
 
 % *%TODO* :
 % offset the threshold by SNR value in dB
-threshold = 3;
+threshold = 2;
 
 % *%TODO* :
 %Create a vector to store noise_level for each iteration on training cells
