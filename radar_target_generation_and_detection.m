@@ -17,7 +17,7 @@ speed_of_light = 3e8;
 % define the target's initial position and velocity. Note : Velocity
 % remains constant
 target_position = 50;
-target_velocity = 0.00000;
+target_velocity = 25;
  
 
 
@@ -69,8 +69,7 @@ for i=1:length(t)
     
     % *%TODO* :
     %For each time stamp update the Range of the Target for constant velocity. 
-    target_position = target_position + target_velocity;
-    r_t(i) = target_position;
+    r_t(i) = target_position + (target_velocity*t(i));
     td(i) = r_t(i) * 2 / speed_of_light;
     
     % *%TODO* :
